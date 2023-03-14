@@ -19,3 +19,14 @@ Tue 14 Mar 2023 06:17:23 PM UTC:
  tests:  1|6
 total_score: 10/70
 4734cf0
+Tue 14 Mar 2023 06:44:58 PM UTC: 
+ exercises.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:36:15: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   36 |     } while ( aux = n );
+      |               ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+80fd12f
