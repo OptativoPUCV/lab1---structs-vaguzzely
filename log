@@ -13,3 +13,9 @@ exercises.c:16:3: error: ‘aux’ undeclared (first use in this function)
 exercises.c:16:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 bf740cf
+Tue 14 Mar 2023 06:17:23 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+4734cf0
