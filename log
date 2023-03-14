@@ -2,3 +2,14 @@ Fri 10 Mar 2023 06:07:41 PM UTC:
  tests:  0|7
 total_score: 0/70
 2bc2dab
+Tue 14 Mar 2023 06:16:42 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:16:3: error: ‘aux’ undeclared (first use in this function)
+   16 |   aux = *a;
+      |   ^~~
+exercises.c:16:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+bf740cf
