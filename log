@@ -85,3 +85,15 @@ exercises.c:95:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 092611b
+Fri 17 Mar 2023 05:52:10 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:39: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   90 |   Vector* vr = (Vector*)malloc(sizeof(vector));
+      |                                       ^~~~~~
+      |                                       Vector
+exercises.c:90:39: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+05138c2

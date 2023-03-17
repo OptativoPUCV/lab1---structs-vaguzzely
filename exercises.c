@@ -87,13 +87,13 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  Vector* vr = (Vector*)
-  malloc(sizeof(vector));
-  vr-> datos = int(calloc)
+  Vector* vr = (Vector*)malloc(sizeof(vector));
+  vr-> datos = (int*)calloc(n, sizeof(int));
+
   
    return NULL;
 }
-
+  
 /*
 Ejercicio 5a.
 Programe la función void asignarValor(Vector * v, int i, int valor), 
