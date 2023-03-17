@@ -33,6 +33,7 @@ void arrayMaxMin(int *a, int n, int *max, int *min)
   int num;
   num = a[aux];
   *max = num;
+  *min = num;
   do
   {
     aux = aux+1;
@@ -40,9 +41,12 @@ void arrayMaxMin(int *a, int n, int *max, int *min)
     if (num > *max){
       *max = num;
     }
+    if (num < *min){
+      *min = num;
+    }
     
   
-    } while ( aux != n );
+  } while ( aux != n );
     
 }
 
@@ -83,7 +87,6 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  Vector* 
    return NULL;
 }
 
