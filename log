@@ -194,3 +194,41 @@ exercises.c:129:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 8fd51e6
+Fri 17 Mar 2023 06:15:36 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:131:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  131 |   c[0] = a1 + a2;
+      |          ^~
+exercises.c:132:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  132 |   c[1] = a2 + b2;
+      |          ^~
+exercises.c:133:11: error: ‘c’ redeclared as different kind of symbol
+  133 |   Vector *c= c[0],c[1];
+      |           ^
+exercises.c:129:53: note: previous definition of ‘c’ with type ‘Vector *’
+  129 | void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
+      |                                             ~~~~~~~~^
+exercises.c:133:14: error: incompatible types when initializing type ‘Vector *’ using type ‘Vector’
+  133 |   Vector *c= c[0],c[1];
+      |              ^
+exercises.c:133:19: error: conflicting types for ‘c’; have ‘Vector[1]’
+  133 |   Vector *c= c[0],c[1];
+      |                   ^
+exercises.c:133:11: note: previous definition of ‘c’ with type ‘Vector *’
+  133 |   Vector *c= c[0],c[1];
+      |           ^
+exercises.c:134:8: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  134 | return 0;
+      |        ^
+exercises.c:129:6: note: declared here
+  129 | void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
+      |      ^~~~~~
+exercises.c:133:19: error: unused variable ‘c’ [-Werror=unused-variable]
+  133 |   Vector *c= c[0],c[1];
+      |                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+9ddedd9

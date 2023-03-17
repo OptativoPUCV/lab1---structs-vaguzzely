@@ -130,5 +130,6 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
 {
   c[0] = a1 + a2;
   c[1] = a2 + b2;
+  Vector *c= c[0],c[1];
 return 0;
     }
