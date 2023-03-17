@@ -97,3 +97,22 @@ exercises.c:90:39: error: ‘vector’ undeclared (first use in this function); 
 exercises.c:90:39: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 05138c2
+Fri 17 Mar 2023 05:52:16 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:39: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   90 |   Vector* vr = (Vector*)malloc(sizeof(vector));
+      |                                       ^~~~~~
+      |                                       Vector
+exercises.c:90:39: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: At top level:
+exercises.c:96:4: error: expected identifier or ‘(’ before ‘return’
+   96 |    return NULL;
+      |    ^~~~~~
+exercises.c:97:1: error: expected identifier or ‘(’ before ‘}’ token
+   97 | }
+      | ^
+Compilation failed
+0d7ee20
