@@ -116,3 +116,15 @@ exercises.c:97:1: error: expected identifier or ‘(’ before ‘}’ token
       | ^
 Compilation failed
 0d7ee20
+Fri 17 Mar 2023 05:53:05 PM UTC: 
+ exercises.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:39: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   90 |   Vector* vr = (Vector*)malloc(sizeof(vector));
+      |                                       ^~~~~~
+      |                                       Vector
+exercises.c:90:39: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+38474e5

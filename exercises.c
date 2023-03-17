@@ -92,10 +92,7 @@ Vector * crearVector(int n) {
   vr->capacidad = n;
   return vr;
 }
-  
-   return NULL;
-}
-  
+
 /*
 Ejercicio 5a.
 Programe la función void asignarValor(Vector * v, int i, int valor), 
