@@ -30,10 +30,19 @@ void arrayMaxMin(int *a, int n, int *max, int *min)
 {
   int aux;
   aux = 0;
+  int num;
+  num = a[aux];
+  *max = num;
   do
   {
+    aux = aux+1;
+    num = a[aux];
+    if (num > *max){
+      *max = num;
+    }
+    
   
-    } while ( aux = n );
+    } while ( aux != n );
     
 }
 
@@ -74,6 +83,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
+  Vector* 
    return NULL;
 }
 
@@ -100,7 +110,8 @@ Ejercicio 7.
 Función que suma los vectores `a` y `b` y 
 actualiza el vector `c` con el resultado de la suma.
 */
-void sumaV(Vector * a, Vector * b, Vector * c) {
+void sumaV(Vector * a, Vector * b, Vector * c) 
+{
 
 }
 
@@ -109,6 +120,7 @@ Ejercicio 8.
 Use las operaciones implementadas de vectores para 
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
-void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
+void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
+{
 
 }
