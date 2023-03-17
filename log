@@ -50,3 +50,19 @@ Fri 17 Mar 2023 05:26:16 PM UTC:
  tests:  2|5
 total_score: 20/70
 95d64cf
+Fri 17 Mar 2023 05:47:53 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:91:17: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   91 |   malloc(sizeof(vector));
+      |                 ^~~~~~
+      |                 Vector
+exercises.c:91:17: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:90:11: error: unused variable ‘vr’ [-Werror=unused-variable]
+   90 |   Vector* vr = (Vector*)
+      |           ^~
+cc1: all warnings being treated as errors
+Compilation failed
+18f1157
