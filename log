@@ -134,3 +134,17 @@ Fri 17 Mar 2023 05:53:18 PM UTC:
  tests:  3|4
 total_score: 30/70
 dcbda0c
+Fri 17 Mar 2023 06:12:35 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:131:10: error: ‘a’ undeclared (first use in this function)
+  131 |   c[0] = a[0] + b[0];
+      |          ^
+exercises.c:131:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:131:17: error: ‘b’ undeclared (first use in this function)
+  131 |   c[0] = a[0] + b[0];
+      |                 ^
+Compilation failed
+4810267
