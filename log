@@ -66,3 +66,22 @@ exercises.c:90:11: error: unused variable ‘vr’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 18f1157
+Fri 17 Mar 2023 05:50:10 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:91:17: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   91 |   malloc(sizeof(vector));
+      |                 ^~~~~~
+      |                 Vector
+exercises.c:91:17: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:92:16: error: expected expression before ‘int’
+   92 |   vr-> datos = int(calloc)
+      |                ^~~
+exercises.c:95:1: error: control reaches end of non-void function [-Werror=return-type]
+   95 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+092611b
