@@ -427,3 +427,21 @@ exercises.c:110:37: error: control reaches end of non-void function [-Werror=ret
 cc1: all warnings being treated as errors
 Compilation failed
 b2f129b
+Sat 18 Mar 2023 06:18:20 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c: In function ‘obtenerValor’:
+test.c:251:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:271:1: error: expected declaration or statement at end of input
+  271 | }
+      | ^
+test.c:272: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9a9f983
