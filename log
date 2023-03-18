@@ -533,3 +533,16 @@ Sat 18 Mar 2023 07:15:08 PM UTC:
  tests:  6|1
 total_score: 60/70
 c44f4bb
+Sat 18 Mar 2023 07:19:30 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:102:22: error: expected ‘;’ before ‘}’ token
+  102 |   v->datos[i] = valor
+      |                      ^
+      |                      ;
+  103 | }
+      | ~                     
+Compilation failed
+975c500
