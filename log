@@ -371,3 +371,15 @@ Sat 18 Mar 2023 06:11:31 AM UTC:
  tests:  3|4
 total_score: 30/70
 4c66f96
+Sat 18 Mar 2023 06:12:19 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:100:3: error: ‘vr’ undeclared (first use in this function); did you mean ‘v’?
+  100 |   vr -> datos[i] = valor;
+      |   ^~
+      |   v
+exercises.c:100:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+b38e2db
