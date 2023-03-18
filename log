@@ -474,3 +474,35 @@ Sat 18 Mar 2023 07:05:03 PM UTC:
  tests:  5|2
 total_score: 50/70
 93afc0b
+Sat 18 Mar 2023 07:11:51 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:132:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  132 |   c[0] = a1 + a2;
+      |          ^~
+exercises.c:133:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  133 |   c[1] = a2 + b2;
+      |          ^~
+exercises.c:134:11: error: ‘c’ redeclared as different kind of symbol
+  134 |   Vector *c= c[0],c[1];
+      |           ^
+exercises.c:130:53: note: previous definition of ‘c’ with type ‘Vector *’
+  130 | void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
+      |                                             ~~~~~~~~^
+exercises.c:134:14: error: incompatible types when initializing type ‘Vector *’ using type ‘Vector’
+  134 |   Vector *c= c[0],c[1];
+      |              ^
+exercises.c:134:19: error: conflicting types for ‘c’; have ‘Vector[1]’
+  134 |   Vector *c= c[0],c[1];
+      |                   ^
+exercises.c:134:11: note: previous definition of ‘c’ with type ‘Vector *’
+  134 |   Vector *c= c[0],c[1];
+      |           ^
+exercises.c:134:19: error: unused variable ‘c’ [-Werror=unused-variable]
+  134 |   Vector *c= c[0],c[1];
+      |                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+4670a92
