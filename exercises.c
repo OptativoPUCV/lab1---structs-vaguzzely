@@ -62,11 +62,13 @@ typedef struct {
 } Persona;
 
 
-Persona* crearPersona(char nombre[], char rut[], int edad) {
+Persona* crearPersona(char nombre[], char rut[], int edad) 
+{
    Persona * p = (Persona *) malloc(sizeof(Persona));
    //asignar valores de entrada a los campos de p
-
-
+   strcpy(p->nombre, nombre);
+   strcpy(p->rut, rut);
+   p->edad = edad;
    return p;
 }
 
@@ -107,7 +109,6 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i)
 {
-  return v -> datos[i];
 }
 
 /*
