@@ -605,3 +605,9 @@ exercises.c:102:7: error: unused variable ‘tamano’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 bd33497
+Sat 18 Mar 2023 07:35:42 PM UTC: 
+ exercises.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+ tests:  6|1
+total_score: 60/70
+4662758
