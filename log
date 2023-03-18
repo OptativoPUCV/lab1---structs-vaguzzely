@@ -457,3 +457,14 @@ Sat 18 Mar 2023 07:04:14 PM UTC:
  tests:  5|2
 total_score: 50/70
 95284a2
+Sat 18 Mar 2023 07:04:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:120:34: error: statement with no effect [-Werror=unused-value]
+  120 |   for (i = 0; i < a->capacidad; i+1) {
+      |                                 ~^~
+cc1: all warnings being treated as errors
+Compilation failed
+bf1d336
