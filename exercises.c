@@ -119,7 +119,7 @@ void sumaV(Vector * a, Vector * b, Vector * c)
   int i = 0;
   while (i < a->capacidad) {
     c->datos[i] = a->datos[i] + b->datos[i];
-    i++;
+    i+1;
   }
 }
 
