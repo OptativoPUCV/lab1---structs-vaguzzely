@@ -282,3 +282,48 @@ exercises.c:131:19: error: unused variable ‘c’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 7729194
+Sat 18 Mar 2023 06:10:43 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:100:24: error: expected ‘;’ before ‘}’ token
+  100 |   v -> datos[i] = valor
+      |                        ^
+      |                        ;
+  101 | }
+      | ~                       
+exercises.c: In function ‘sumaV2’:
+exercises.c:129:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  129 |   c[0] = a1 + a2;
+      |          ^~
+exercises.c:130:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  130 |   c[1] = a2 + b2;
+      |          ^~
+exercises.c:131:11: error: ‘c’ redeclared as different kind of symbol
+  131 |   Vector *c= c[0],c[1];
+      |           ^
+exercises.c:127:53: note: previous definition of ‘c’ with type ‘Vector *’
+  127 | void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
+      |                                             ~~~~~~~~^
+exercises.c:131:14: error: incompatible types when initializing type ‘Vector *’ using type ‘Vector’
+  131 |   Vector *c= c[0],c[1];
+      |              ^
+exercises.c:131:19: error: conflicting types for ‘c’; have ‘Vector[1]’
+  131 |   Vector *c= c[0],c[1];
+      |                   ^
+exercises.c:131:11: note: previous definition of ‘c’ with type ‘Vector *’
+  131 |   Vector *c= c[0],c[1];
+      |           ^
+exercises.c:132:8: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  132 | return 0;
+      |        ^
+exercises.c:127:6: note: declared here
+  127 | void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
+      |      ^~~~~~
+exercises.c:131:19: error: unused variable ‘c’ [-Werror=unused-variable]
+  131 |   Vector *c= c[0],c[1];
+      |                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+813bd0e
