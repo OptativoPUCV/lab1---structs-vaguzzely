@@ -365,3 +365,9 @@ exercises.c:131:19: error: unused variable ‘c’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 08e87a0
+Sat 18 Mar 2023 06:11:31 AM UTC: 
+ exercises.c | 4 ----
+ 1 file changed, 4 deletions(-)
+ tests:  3|4
+total_score: 30/70
+4c66f96
