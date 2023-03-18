@@ -585,3 +585,23 @@ exercises.c:102:12: error: ‘Vector’ has no member named ‘tamano’
       |            ^~
 Compilation failed
 d3cfcf9
+Sat 18 Mar 2023 07:33:13 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:105:12: error: ‘Vector’ has no member named ‘tamano’
+  105 |   if (i < v->tamano) {
+      |            ^~
+exercises.c:104:8: error: unused variable ‘datos’ [-Werror=unused-variable]
+  104 |   int *datos;
+      |        ^~~~~
+exercises.c:103:7: error: unused variable ‘capacidad’ [-Werror=unused-variable]
+  103 |   int capacidad;
+      |       ^~~~~~~~~
+exercises.c:102:7: error: unused variable ‘tamano’ [-Werror=unused-variable]
+  102 |   int tamano;
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bd33497
