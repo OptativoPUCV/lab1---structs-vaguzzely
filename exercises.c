@@ -117,10 +117,10 @@ actualiza el vector `c` con el resultado de la suma.
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
   int i = 0;
-  while (i < a->capacidad) {
+  do {
     c->datos[i] = a->datos[i] + b->datos[i];
-    i+1;
-  }
+    i = i+1;
+  } while (i < a->capacidad);
 }
 
 /*
