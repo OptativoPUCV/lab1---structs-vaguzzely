@@ -99,8 +99,11 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) 
 {
-  v->datos[i] = valor;
+  if (i < v->tamano) {
+    v->datos[i] = valor;
+  } else {
   }
+}
 
 /*
 Ejercicio 6.
@@ -120,7 +123,7 @@ void sumaV(Vector * a, Vector * b, Vector * c)
   do {
     c->datos[i] = a->datos[i] + b->datos[i];
     i = i+1;
-  } while (i < a->capacidad);
+  } while (i < a -> capacidad);
 }
 
 /*
