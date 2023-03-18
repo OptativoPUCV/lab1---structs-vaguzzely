@@ -383,3 +383,13 @@ exercises.c:100:3: error: ‘vr’ undeclared (first use in this function); did 
 exercises.c:100:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b38e2db
+Sat 18 Mar 2023 06:12:51 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:100:5: error: ‘Vector’ has no member named ‘valor’
+  100 |   v -> valor[i] = valor;
+      |     ^~
+Compilation failed
+9070cc5
