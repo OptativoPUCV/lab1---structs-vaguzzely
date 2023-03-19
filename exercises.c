@@ -113,8 +113,15 @@ Ejercicio 6.
 Programe la función int obtenerValor(Vector * v, int i), 
 la cual retorna el valor en la posición i del vector v.
 */
-int obtenerValor(Vector * v, int i){
-return 0;
+int obtenerValor(Vector * v, int i)
+{
+  if (i < v->capacidad)
+  {
+    return v->datos[i];
+    } 
+  else{
+    return 0;
+    }
 }
 /*Ejercicio 7.
 Función que suma los vectores `a` y `b` y 
