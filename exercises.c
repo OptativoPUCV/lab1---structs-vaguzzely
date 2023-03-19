@@ -55,7 +55,8 @@ crearPersona(...), la cual crea una nueva persona con
 los datos ingresados como parámetros y retorna un puntero 
 al dato recién creado.
 */
-typedef struct {
+typedef struct 
+{
   char nombre[30];
   char rut[11];
   int edad;
@@ -65,7 +66,7 @@ typedef struct {
 Persona* crearPersona(char nombre[], char rut[], int edad) 
 {
    Persona * p = (Persona *) malloc(sizeof(Persona));
-   //asignar valores de entrada a los campos de p
+  
    strcpy(p->nombre, nombre);
    strcpy(p->rut, rut);
    p->edad = edad;
@@ -99,12 +100,13 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) 
 {
-  if (i < v->capacidad) {
+  if (i < v->capacidad) 
+  {
     v->datos[i] = valor;
   }
   else
   {
-    return;
+  return;
     }
 }
 
