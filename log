@@ -611,3 +611,17 @@ Sat 18 Mar 2023 07:35:42 PM UTC:
  tests:  6|1
 total_score: 60/70
 4662758
+Sun 19 Mar 2023 12:54:29 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:105:12: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  105 |     return 0;
+      |            ^
+exercises.c:100:6: note: declared here
+  100 | void asignarValor(Vector * v, int i, int valor)
+      |      ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3359c06
