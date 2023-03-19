@@ -101,7 +101,9 @@ void asignarValor(Vector * v, int i, int valor)
 {
   if (i < v->capacidad) {
     v->datos[i] = valor;
-  } else{
+  }
+  else
+  {
     return;
     }
 }
