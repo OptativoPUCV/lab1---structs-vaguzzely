@@ -121,7 +121,8 @@ int obtenerValor(Vector * v, int i)
   {
     return v->datos[i];
     } 
-  else{
+  else
+  {
     return 0;
     }
 }
@@ -132,7 +133,8 @@ actualiza el vector `c` con el resultado de la suma.
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
   int i = 0;
-  do {
+  do 
+  {
     c->datos[i] = a->datos[i] + b->datos[i];
     i = i+1;
   } while (i < a -> capacidad);
